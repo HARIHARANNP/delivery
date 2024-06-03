@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Delivery Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    body{
+        background-color:rgb(11, 234, 234);
+    }
+    .hari{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    nav ul li{
+        display: inline;
+        margin-left: 70px;
+        margin-right: 40px;
+        top: 50px;
+        
+    }
+    nav ul li a{
+        
+        text-decoration: none;
+        color:darkgreen;
+        font-size: 22px;
+            
+    }
+    li a:hover{
+        color: blueviolet;
+    }
+    
+    #new{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    
+        
+    .ban{
+        margin-top: 60px;
+        margin-left: 30px;
+        
+
+    }
+    #cav{
+        color:darkviolet;
+        font-size: 55px;
+        text-shadow: 5px -5px 8px rgb(224, 12, 12);
+        margin-top: -15px;
+        
+        animation: 5s cir linear infinite;
+        
+    }
+    @keyframes cir {
+        50%{
+            transform: translateY(-7px);
+
+        }
+
+    }
+    #vac{
+
+        color: rgb(255, 0, 0);
+        font-size: 48px;
+        margin-top: -20px;
+        text-shadow: 4px -4px 6px rgb(20, 5, 5);
+        animation: 5s mov linear infinite;
+
+    }
+    @keyframes mov {
+        0%{
+            transform: translateX(7px);
+        }
+        
+    }
+    #sac{
+        color:rgb(13, 220, 75);
+        font-size: 40px;
+        margin-top: -10px;
+        font-family:'Times New Roman', Times, serif;  
+        animation: blink 3s linear infinite;
+    }
+    @keyframes blink {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 3;
+        }
+    }
+    
+    #nac{
+        color: #555;
+    }
+    #nan{
+        margin-top: 50px;
+        background-color: chocolate;
+        color: aliceblue;
+        width: 150px;
+        height: 50px;
+        border-radius: 35%;
+        margin-left: 15px;
+
+    }
+    .sky{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    img{
+        position: absolute;
+        top: 110px;
+        right: 50px;
+    }
+    #han{
+        font-size: 28px;
+        color: rgba(255, 0, 0, 0.913);
+        text-shadow: 5px -5px 6px gold;
+    }
+    
+    section {
+    padding: 2em;
+    text-align: center;
+}
+#sis{
+    font-size: 43px;
+}
+#mom{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#dad{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#lal{
+    font-size: 38px;
+    margin-top: -15px;
+}
+#kal{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#hay{
+    margin-top: 20px;
+}
+#pan{
+    font-size: 36px;
+    margin-top: -15px;
+}
+.van{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.7em;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+</style>
+<body>
+    <div>
+    <div class="hari">
+    <div>
+     <p id="han"><i class="fa-solid fa-motorcycle"></i>EXPRESS DELIVERY SERVICE</p> 
+    </div>
+    <div>
+     <nav>
+        <ul class="red">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    </div>
+
+    </div>
+ 
+    
+    <div class="ban">
+        <div>
+
+        <h1 id="cav">PROVIDING </h1>
+        <h1 id ="vac">THE HIGHEST</h1>
+        <h1 id ="sac">QUALITY SERVICE</h1>
+        <h2 id="nac">24 HOURS DAY</h2>
+            <div class ="sky">
+            <p style="color:darkmagenta">FAST AND RELIABLE DELIVERY SERVICES</p>
+            <p style="color:darkblue;"><i class="fa-solid fa-location-dot" style="font-size: 15px; color: coral;"></i>1234 MainStreet Boulevard IV,<span>South City,City Zip Code.</span></p>
+            <p style="color:plum"><i class="fa-regular fa-envelope"></i>hari123@gmail.com</p>
+            <p style="color:firebrick"><i class="fa-solid fa-globe"></i>www.delivery.com</p>
+            </div>
+    <div>
+    <img src="c:\Users\N.P. HARIHARAN\Downloads\WhatsApp Image 2024-06-03 at 1.46.08 PM.jpeg" width="45%" height="70%>
+    0%">
+    </div>
+    <section id="home">
+        <h1 id="sis">Welcome to Our Express Delivery Service</h2>
+        <p id="dad">We deliver your packages with speed and care.</p>
+        <p id ="mom">Express delivery services are faster than standard courier shipping and are great for time-sensitive shipments</p>
+    </section>
+
+    <section id="about">
+        <h2 id="lal">About Us</h2>
+        <p id="kal">With more than 20 years of courier market experience and a world wide network of agents.</p><p style="font-size: 22px;">Universal Delivery Solutions provides an excellent,efficient and reliable courier service worldwide.</p>
+    </section>
+
+    <section id="services">
+        <h2 id="pan">Our Services</h2>
+        <ul class="van">
+            <li>Residential</li>
+            <li>Long distance</li>
+            <li>Fast Delivery</li>
+            <li>Package Tracking</li>
+            <li>24/7 Support</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2 id="dv" style="font-size: 34px; margin-top: -14px";>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    </div>
+
+    <script>
+       document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    if (name && email && message) {
+        alert('Thank you for your message, ' + name + '! We will get back to you soon.');
+        
+        // Reset the form
+        this.reset();
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
+
+    </script>
+</body>
+</html>
